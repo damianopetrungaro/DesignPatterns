@@ -1,6 +1,6 @@
 <?php
 
-namespace Prototype\Pattern;
+namespace App\Prototype\Pattern;
 
 abstract class PrototypeAbstract
 {
@@ -10,7 +10,7 @@ abstract class PrototypeAbstract
 
     public function getInfo()
     {
-        return 'The fuit: '.$this->name.' has a '.$this->taste.' taste!';
+        return 'The fuit: '.$this->name.' has a '.$this->taste.' taste!<br>';
     }
 
     abstract public function __clone();

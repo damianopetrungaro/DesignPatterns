@@ -1,20 +1,17 @@
 <?php
 
-namespace Prototype\Client;
+namespace App\Prototype;
 
-use Prototype\Pattern\Banana;
+use App\Prototype\Pattern\Banana;
 
-class ClientPrototype
+class Client
 {
     public $fruits;
 
     public function __construct()
     {
         $this->fruits = new Banana();
-    }
 
-    public function action()
-    {
         $kiwi = clone $this->fruits;
         $kiwi->name = "Kiwi";
         $kiwi->taste = "bad";

@@ -1,15 +1,11 @@
 <?php
 
-namespace Prototype\Pattern;
+namespace App\Prototype\Pattern;
 
-use PrototypeAbstract;
+use App\Prototype\Pattern\PrototypeAbstract;
 
 class Banana extends PrototypeAbstract
 {
-    public $name;
-
-    public $taste;
-
     public function __construct()
     {
         $this->name = "Banana";
