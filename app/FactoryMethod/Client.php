@@ -2,11 +2,19 @@
 
 namespace App\FactoryMethod;
 
-
 use App\FactoryMethod\Pattern\Factory\FruitsFactory;
 
+/**
+ * Simulate client action
+ */
 class Client
 {
+	/**
+	 * Init two object from a factory.
+	 * Then stamp two strings.
+	 * 
+	 * @return void
+	 */
     public function __construct()
     {
        $banana = FruitsFactory::build("Banana");

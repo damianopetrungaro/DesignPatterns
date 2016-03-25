@@ -1,4 +1,9 @@
 {
+    "name": "damianopetrungaro/DesignPatterns",
+    "description": "Implementing some famous design patterns in PHP.",
+    "keywords": ["php", "patterns"],
+    "license": "MIT",
+    "type": "project",
 	"autoload": {
 		"psr-4": {
 			"App\\": "app/"
