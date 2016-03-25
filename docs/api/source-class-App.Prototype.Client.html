@@ -81,6 +81,16 @@
 						<a href="namespace-App.Prototype.Pattern.html">
 							Pattern						</a>
 							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-App.Singleton.html">
+							Singleton<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-App.Singleton.Pattern.html">
+							Pattern						</a>
+							</li>
 								</ul></li></ul></li>
 			</ul>
 		</div>
@@ -96,6 +106,8 @@
 				<li><a href="class-App.Prototype.Client.html">App\Prototype\Client</a></li>
 				<li><a href="class-App.Prototype.Pattern.Banana.html">App\Prototype\Pattern\Banana</a></li>
 				<li><a href="class-App.Prototype.Pattern.PrototypeAbstract.html">App\Prototype\Pattern\PrototypeAbstract</a></li>
+				<li><a href="class-App.Singleton.Client.html">App\Singleton\Client</a></li>
+				<li><a href="class-App.Singleton.Pattern.Singleton.html">App\Singleton\Pattern\Singleton</a></li>
 			</ul>
 
 			<h3>Interfaces</h3>
@@ -134,7 +146,7 @@
 </span><span id="18" class="l"><a href="#18">18 </a>
 </span><span id="19" class="l"><a href="#19">19 </a>    <span class="php-comment">/**
 </span></span><span id="20" class="l"><a href="#20">20 </a><span class="php-comment">     * Init an object from a class.
-</span></span><span id="21" class="l"><a href="#21">21 </a><span class="php-comment">     * Then colne it and stamp two strings.
+</span></span><span id="21" class="l"><a href="#21">21 </a><span class="php-comment">     * Then clone it and stamp two strings.
 </span></span><span id="22" class="l"><a href="#22">22 </a><span class="php-comment">     * 
 </span></span><span id="23" class="l"><a href="#23">23 </a><span class="php-comment">     * @return void
 </span></span><span id="24" class="l"><a href="#24">24 </a><span class="php-comment">     */</span>
@@ -142,12 +154,12 @@
 </span><span id="26" class="l"><a href="#26">26 </a>    {
 </span><span id="27" class="l"><a href="#27">27 </a>        <span class="php-var">$this</span>-&gt;fruit = <span class="php-keyword1">new</span> Banana();
 </span><span id="28" class="l"><a href="#28">28 </a>
-</span><span id="29" class="l"><a href="#29">29 </a>        <span class="php-var">$kiwi</span> = <span class="php-keyword1">clone</span> <span class="php-var">$this</span>-&gt;fruit;
-</span><span id="30" class="l"><a href="#30">30 </a>        <span class="php-var">$kiwi</span>-&gt;name = <span class="php-quote">&quot;Kiwi&quot;</span>;
-</span><span id="31" class="l"><a href="#31">31 </a>        <span class="php-var">$kiwi</span>-&gt;taste = <span class="php-quote">&quot;bad&quot;</span>;
+</span><span id="29" class="l"><a href="#29">29 </a>        <span class="php-var">$apple</span> = <span class="php-keyword1">clone</span> <span class="php-var">$this</span>-&gt;fruit;
+</span><span id="30" class="l"><a href="#30">30 </a>        <span class="php-var">$apple</span>-&gt;name = <span class="php-quote">&quot;apple&quot;</span>;
+</span><span id="31" class="l"><a href="#31">31 </a>        <span class="php-var">$apple</span>-&gt;taste = <span class="php-quote">&quot;bad&quot;</span>;
 </span><span id="32" class="l"><a href="#32">32 </a>
 </span><span id="33" class="l"><a href="#33">33 </a>        <span class="php-keyword1">echo</span> <span class="php-var">$this</span>-&gt;fruit-&gt;getInfo();
-</span><span id="34" class="l"><a href="#34">34 </a>        <span class="php-keyword1">echo</span> <span class="php-var">$kiwi</span>-&gt;getInfo();
+</span><span id="34" class="l"><a href="#34">34 </a>        <span class="php-keyword1">echo</span> <span class="php-var">$apple</span>-&gt;getInfo();
 </span><span id="35" class="l"><a href="#35">35 </a>    }
 </span><span id="36" class="l"><a href="#36">36 </a>}</span></code></pre>
 	</div>
@@ -157,6 +169,6 @@
 	</div>
 </div>
 <script src="resources/combined.js?533e23ef2f02bd4b20548834a028566b6eb403e0"></script>
-<script src="elementlist.js?b12c54b6acdc41b209bb1cc2324985ed31d337d4"></script>
+<script src="elementlist.js?64aab9a7760e300dcba504a00fb14534320e203d"></script>
 </body>
 </html>

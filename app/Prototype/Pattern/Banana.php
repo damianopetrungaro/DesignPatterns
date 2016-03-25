@@ -21,7 +21,7 @@ class Banana extends PrototypeAbstract
     /**
      * Special method for clone the object
      * 
-     * @return [void
+     * @return void
      */
     public function __clone() {}
 }

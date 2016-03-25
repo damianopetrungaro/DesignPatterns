@@ -18,7 +18,7 @@ class Client
 
     /**
      * Init an object from a class.
-     * Then colne it and stamp two strings.
+     * Then clone it and stamp two strings.
      * 
      * @return void
      */
@@ -26,11 +26,11 @@ class Client
     {
         $this->fruit = new Banana();
 
-        $kiwi = clone $this->fruit;
-        $kiwi->name = "Kiwi";
-        $kiwi->taste = "bad";
+        $apple = clone $this->fruit;
+        $apple->name = "apple";
+        $apple->taste = "bad";
 
         echo $this->fruit->getInfo();
-        echo $kiwi->getInfo();
+        echo $apple->getInfo();
     }
 }
