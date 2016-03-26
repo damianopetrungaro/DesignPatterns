@@ -2,7 +2,7 @@
 
 namespace App\FactoryMethod;
 
-use App\FactoryMethod\Pattern\Factory\FruitsFactory;
+use App\FactoryMethod\Pattern\FruitsFactory;
 
 /**
  * Simulate client action

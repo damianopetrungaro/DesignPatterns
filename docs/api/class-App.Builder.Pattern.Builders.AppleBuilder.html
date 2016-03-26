@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class App\Prototype\Client</title>
+	<title>Interface App\Builder\Pattern\Builders\AppleBuilder</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?49f43d3208c5d7e33fa16d36107a345bf11cc00d">
@@ -28,7 +28,7 @@
 
 				<ul class="nav navbar-nav">
 					<li>
-						<a href="namespace-App.Prototype.html" title="Summary of App\Prototype"><span>Namespace</span></a>
+						<a href="namespace-App.Builder.Pattern.Builders.html" title="Summary of App\Builder\Pattern\Builders"><span>Namespace</span></a>
 					</li>
 					<li class="active">
 <span>Class</span>					</li>
@@ -53,12 +53,12 @@
 							App<span></span>
 						</a>
 							<ul>
-					<li>
+					<li class="active">
 						<a href="namespace-App.Builder.html">
 							Builder<span></span>
 						</a>
 							<ul>
-					<li>
+					<li class="active">
 						<a href="namespace-App.Builder.Pattern.html">
 							Pattern<span></span>
 						</a>
@@ -67,7 +67,7 @@
 						<a href="namespace-App.Builder.Pattern.Apples.html">
 							Apples						</a>
 							</li>
-					<li>
+					<li class="active">
 						<a href="namespace-App.Builder.Pattern.Builders.html">
 							Builders						</a>
 							</li>
@@ -87,7 +87,7 @@
 							Fruits						</a>
 							</li>
 								</ul></li></ul></li>
-					<li class="active">
+					<li>
 						<a href="namespace-App.Prototype.html">
 							Prototype<span></span>
 						</a>
@@ -114,9 +114,15 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li class="active"><a href="class-App.Prototype.Client.html">Client</a></li>
+				<li><a href="class-App.Builder.Pattern.Builders.AppleDirector.html">AppleDirector</a></li>
+				<li><a href="class-App.Builder.Pattern.Builders.BadAppleBuilder.html">BadAppleBuilder</a></li>
+				<li><a href="class-App.Builder.Pattern.Builders.GoodAppleBuilder.html">GoodAppleBuilder</a></li>
 			</ul>
 
+			<h3>Interfaces</h3>
+			<ul>
+				<li class="active"><a href="class-App.Builder.Pattern.Builders.AppleBuilder.html">AppleBuilder</a></li>
+			</ul>
 
 
 
@@ -130,17 +136,24 @@
 <div id="right">
 	<div id="rightInner">
 <div id="content" class="class">
-	<h1>Class Client</h1>
+	<h1>Interface AppleBuilder</h1>
 
 
 	<div class="description">
-	<p>Simulate client action</p>
+	<p>Interface for Apple builders</p>
 	</div>
 
 
 
 
 
+	<div>
+		<h3>Direct known implementers</h3>
+		<p class="elementList">
+			<code><a href="class-App.Builder.Pattern.Builders.BadAppleBuilder.html">App\Builder\Pattern\Builders\BadAppleBuilder</a></code>, 
+			<code><a href="class-App.Builder.Pattern.Builders.GoodAppleBuilder.html">App\Builder\Pattern\Builders\GoodAppleBuilder</a></code>
+		</p>
+	</div>
 
 
 
@@ -148,10 +161,10 @@
 	<div class="alert alert-info">
 		
 		
-		<b>Namespace:</b> <a href="namespace-App.html">App</a>\<a href="namespace-App.Prototype.html">Prototype</a><br>
+		<b>Namespace:</b> <a href="namespace-App.html">App</a>\<a href="namespace-App.Builder.html">Builder</a>\<a href="namespace-App.Builder.Pattern.html">Pattern</a>\<a href="namespace-App.Builder.Pattern.Builders.html">Builders</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-App.Prototype.Client.html#7-36" title="Go to source code">Prototype/Client.php</a>
+			<b>Located at</b> <a href="source-class-App.Builder.Pattern.Builders.AppleBuilder.html#5-37" title="Go to source code">Builder/Pattern/Builders/AppleBuilder.php</a>
 		<br>
 	</div>
 
@@ -160,7 +173,7 @@
 		<div class="panel panel-default">
 			<div class="panel-heading"><h2>Methods summary</h2></div>
 			<table class="summary table table-bordered table-striped methods" id="methods">
-		<tr data-order="__construct" id="___construct">
+		<tr data-order="buildTaste" id="_buildTaste">
 
 			<td class="attributes"><code>
 				 public 
@@ -170,20 +183,109 @@
 			</td>
 
 			<td class="name"><div>
-			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-App.Prototype.Client.html#19-35" title="Go to source code">__construct</a>( )</code>
+			<a class="anchor" href="#_buildTaste">#</a>
+			<code><a href="source-class-App.Builder.Pattern.Builders.AppleBuilder.html#10-15" title="Go to source code">buildTaste</a>( )</code>
 
 			<div class="description short">
-				<p>Init an object from a class.
-Then clone it and stamp two strings.</p>
+				<p>Define the apple's taste</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>Init an object from a class.
-Then clone it and stamp two strings.</p>
+				<p>Define the apple's taste</p>
 
 
 
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="buildOrigin" id="_buildOrigin">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_buildOrigin">#</a>
+			<code><a href="source-class-App.Builder.Pattern.Builders.AppleBuilder.html#17-22" title="Go to source code">buildOrigin</a>( )</code>
+
+			<div class="description short">
+				<p>Define the apple's origin</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Define the apple's origin</p>
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="buildColor" id="_buildColor">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_buildColor">#</a>
+			<code><a href="source-class-App.Builder.Pattern.Builders.AppleBuilder.html#24-29" title="Go to source code">buildColor</a>( )</code>
+
+			<div class="description short">
+				<p>Define the apple's color</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Define the apple's color</p>
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getApple" id="_getApple">
+
+			<td class="attributes"><code>
+				 public 
+				Apple
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getApple">#</a>
+			<code><a href="source-class-App.Builder.Pattern.Builders.AppleBuilder.html#31-36" title="Go to source code">getApple</a>( )</code>
+
+			<div class="description short">
+				<p>Return the built Apple</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Return the built Apple</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						Apple
+					</div>
 
 
 
@@ -198,42 +300,6 @@ Then clone it and stamp two strings.</p>
 
 
 
-
-
-
-
-
-
-		<div class="panel panel-default">
-            <div class="panel-heading"><h2>Properties summary</h2></div>
-			<table class="summary table table-bordered table-striped properties" id="properties">
-		<tr data-order="fruit" id="$fruit">
-			<td class="attributes"><code>
-				public  
-				Object
-			</code></td>
-
-			<td class="name">
-					<a href="source-class-App.Prototype.Client.html#12-17" title="Go to source code"><var>$fruit</var></a>
-
-				<div class="description short">
-					<p>Contains Fruit object</p>
-				</div>
-
-				<div class="description detailed hidden">
-					<p>Contains Fruit object</p>
-
-				</div>
-			</td>
-			<td class="value">
-				<div>
-					<a href="#$fruit" class="anchor">#</a>
-					<code></code>
-				</div>
-			</td>
-		</tr>
-			</table>
-		</div>
 
 
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\FactoryMethod\Pattern\Factory;
+namespace App\FactoryMethod\Pattern;
 
 /**
  * Factory for fruit objects

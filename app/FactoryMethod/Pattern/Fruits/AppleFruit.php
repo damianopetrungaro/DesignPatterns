@@ -5,7 +5,7 @@ namespace App\FactoryMethod\Pattern\Fruits;
 use App\FactoryMethod\Pattern\Fruits\FruitsInterface as Fruits;
 
 /**
- * Apple Fruit Object
+ * Apple Fruit object
  */
 class AppleFruit implements Fruits
 {
