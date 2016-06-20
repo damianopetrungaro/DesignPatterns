@@ -3,6 +3,7 @@
 require 'vendor/autoload.php';
 
 use App\FactoryMethod\Client as Factory;
+use App\Decorator\Client as Decorator;
 use App\Prototype\Client as Prototype;
 use App\Singleton\Client as Singleton;
 use App\Strategy\Client as Strategy;
@@ -31,3 +32,9 @@ echo "<h1>Behavioral design patterns</h1>";
 
 	echo "<h3>Strategy Pattern:</h3>";
 	new Strategy();
+
+
+echo "<h1>Structural design patterns</h1>";
+
+	echo "<h3>Decorator Pattern:</h3>";
+	new Decorator();
