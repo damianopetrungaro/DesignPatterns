@@ -16,6 +16,6 @@ class NoBiteable implements Biteable
 	 */
 	public function tryToBite()
 	{
-		return "I can't be biten!";
+		return "I can't be bitten!";
 	}
 }

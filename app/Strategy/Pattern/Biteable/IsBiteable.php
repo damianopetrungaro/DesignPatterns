@@ -16,6 +16,6 @@ class IsBiteable implements Biteable
 	 */
 	public function tryToBite()
 	{
-		return "I can be biten!";
+		return "I can be bitten!";
 	}
 }
